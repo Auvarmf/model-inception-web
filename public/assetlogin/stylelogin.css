@@ -1,0 +1,133 @@
+.landing {
+    background: linear-gradient(233.67deg, rgba(97, 176, 220, 0.13) 14.75%, rgba(87, 160, 201, 0.84) 87.2%);
+    text-align: center;
+    padding: 20px;
+}
+
+.judul1 {
+    margin-top: 50px;
+    font-family: 'Ubuntu', sans-serif;
+    text-align: center;
+    font-size: 24px;
+}
+
+.role1 {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.logo {
+    margin-top: 70px;
+    display: flex;
+    justify-content: center;
+}
+
+.logo img {
+    width: 243px;
+    height: 185px;
+}
+
+.button-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 50px;
+    padding-bottom: 100px;
+}
+
+.button-row a {
+    margin: 20px;
+    padding: 10px 20px;
+    font-size: 18px;
+    background-color: #555555;
+    border: none;
+    border-radius: 7px;
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+
+/* Login */
+.loginn {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+    height: 100vh;
+}
+
+.left-side {
+    flex: 1;
+    background-color: #7ECBFF;
+    border-radius: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    margin-left: -280px;
+}
+
+.lgakun {
+    text-align: center;
+    margin-bottom: 40px;
+    color: #555555;
+}
+
+.logo1 img {
+    width: 243px;
+    height: 185px;
+    margin-bottom: 20px;
+}
+
+.login-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.form-input {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.input-icon {
+    margin-right: 10px;
+}
+
+.right-side {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.header {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    margin-left: 40px;
+}
+
+.welcome-image {
+    width: 300px;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.welcome-message {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.description {
+    font-size: 14px;
+}
