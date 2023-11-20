@@ -438,7 +438,7 @@
 
                 <!-- Form input -->
                 <div class="mb-3">
-                    <input type="email" placeholder="Email" name="email" class="@error('email') is-invalid @enderror" autofocus required value="{{ old('email') }}"><img src="assetlogin/img/emailicon.png">
+                    <input type="text" placeholder="NPM" name="npm" class="@error('npm') is-invalid @enderror" autofocus required value="{{ old('npm') }}"><img src="assetlogin/img/person.png">
                     @error('email')
                     <div class="invalid-feedback">
                         {{ $message }}
