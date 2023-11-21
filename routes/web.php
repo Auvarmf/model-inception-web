@@ -49,3 +49,6 @@ Route::get('/dashboard', [DashboardController::class, 'index'])->middleware('aut
 
 
 Route::resource('/dashboard/profile', DashboardProfileController::class)->middleware('auth');
+
+Route::get('/profile', [ProfileController::class, 'index'])->middleware('auth');
+Route::put('/profile', [ProfileController::class, 'update'])->middleware('auth');

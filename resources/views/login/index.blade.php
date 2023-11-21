@@ -32,6 +32,18 @@
     <!-- icon -->
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
 
+    <!-- Vendor CSS Files -->
+    <link href="{{ asset('assets/vendor/bootstrap/css/bootstrap.min.css') }}" rel="stylesheet">
+    <link href="{{ asset('assets/vendor/bootstrap-icons/bootstrap-icons.css') }}" rel="stylesheet">
+    <link href="{{ asset('assets/vendor/boxicons/css/boxicons.min.css') }}" rel="stylesheet">
+    <link href="{{ asset('assets/vendor/quill/quill.snow.css') }}" rel="stylesheet">
+    <link href="{{ asset('assets/vendor/quill/quill.bubble.css') }}" rel="stylesheet">
+    <link href="{{ asset('assets/vendor/remixicon/remixicon.css') }}" rel="stylesheet">
+    <link href="{{ asset('assets/vendor/simple-datatables/style.css') }}" rel="stylesheet">
+
+    <!-- Template Main CSS File -->
+    <link href="{{ asset('assets/css/style.css') }}" rel="stylesheet">
+
     <title>{{ $title }}</title>
 
     <style>
@@ -419,6 +431,7 @@
             <form action="/login" method="POST" class="right-border-radius">
                 @if(session()->has('success'))
                 <div class="alert alert-success alert-dismissible fade show" role="alert">
+                    <i class="bi bi-check-circle me-1"></i>
                     {{ session('success') }}
                     <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
                 </div>
@@ -426,6 +439,7 @@
 
                 @if(session()->has('loginError'))
                 <div class="alert alert-danger alert-dismissible fade show" role="alert">
+                    <i class="bi bi-exclamation-octagon me-1"></i>
                     {{ session('loginError') }}
                     <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
                 </div>
@@ -439,14 +453,14 @@
                 <!-- Form input -->
                 <div class="mb-3">
                     <input type="text" placeholder="NPM" name="npm" class="@error('npm') is-invalid @enderror" autofocus required value="{{ old('npm') }}"><img src="assetlogin/img/person.png">
-                    @error('email')
+                    @error('npm')
                     <div class="invalid-feedback">
                         {{ $message }}
                     </div>
                     @enderror
 
                     <input type="password" placeholder="Password" name="password" required><img src="assetlogin/img/lockicon.png">
-                    <a href="#">Forgot your password?</a>
+                    <!-- <a href="#">Forgot your password?</a> -->
                 </div>
 
                 <button style="background: #555555" class="btnmasuk" name="login">Masuk</button>
@@ -510,6 +524,19 @@
 
     <!-- Bootsrtap JavaScript -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Vendor JS Files -->
+    <script src="{{ asset('assets/vendor/apexcharts/apexcharts.min.js') }}"></script>
+    <script src="{{ asset('assets/vendor/bootstrap/js/bootstrap.bundle.min.js') }}"></script>
+    <script src="{{ asset('assets/vendor/chart.js/chart.umd.js') }}"></script>
+    <script src="{{ asset('assets/vendor/echarts/echarts.min.js') }}"></script>
+    <script src="{{ asset('assets/vendor/quill/quill.min.js') }}"></script>
+    <script src="{{ asset('assets/vendor/simple-datatables/simple-datatables.js') }}"></script>
+    <script src="{{ asset('assets/vendor/tinymce/tinymce.min.js') }}"></script>
+    <script src="{{ asset('assets/vendor/php-email-form/validate.js') }}"></script>
+
+    <!-- Template Main JS File -->
+    <script src="{{ asset('assets/js/main.js') }}"></script>
 
 </body>
 
